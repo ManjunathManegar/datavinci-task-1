@@ -46,15 +46,15 @@ const Header = () => {
               style={{
                 position: 'absolute',
                 top: '-5px',
-                right: '-5px',
-                paddingLeft: '5px',
-                paddingRight: '5px',
+                right: '-3px',
+                paddingLeft: '7px',
+                paddingRight: '7px',
                 paddingTop: '2px',
                 paddingBottom: '2px',
                 backgroundColor: 'yellow',
                 color: '#000000',
                 borderRadius: '50%',
-                fontSize: '8px',
+                fontSize: '10px',
                 fontWeight: 'bold',
               }}
             >
