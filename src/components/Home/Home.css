@@ -1,10 +1,13 @@
-.galery-section {
+.home {
   width: 100%;
-  height: 336px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.galery-section {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
 
 .display-section {
@@ -24,6 +27,7 @@
 }
 
 .arrow-button {
+  justify-self: center;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -31,6 +35,12 @@
 
 .arrow {
   color: #000000;
+}
+
+.product-details-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
@@ -437,4 +447,103 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.desktop {
+  display: none;
+}
+
+.display {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  width: 100%;
+}
+
+.desktop-thumbnails {
+  display: none;
+}
+
+.desktop-bundle-view {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bundle-add-to-cart {
+  width: stretch;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #313131;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .home {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .galery-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery-mobile {
+    display: none;
+  }
+
+  .thumbnails {
+    display: none;
+  }
+
+  .desktop-review {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .desktop-thumbnails {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .desktop-thumbnail {
+    width: auto;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  .logos {
+    width: 12%;
+    height: auto;
+  }
+
+  .varient {
+    width: 14%;
+    height: auto;
+  }
+
+  .desktop-bundle-view {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .bundle-add-to-cart {
+    width: 30%;
+    align-self: center;
+    font-size: 13px;
+    padding: 10px;
+  }
 }
